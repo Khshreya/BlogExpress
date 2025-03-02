@@ -1,0 +1,10 @@
+<div class="container">
+    <h2 class="text-center text-primary">Latest Blogs</h2>
+    {{#each blogs}}
+        <div class="blog-card">
+            <h3 class="blog-title">{{this.title}}</h3>
+            <p class="blog-content">{{this.content}}</p>
+            <a href="/blogpost/{{this.slug}}" class="btn btn-outline-primary">Read More</a>
+        </div>
+    {{/each}}
+</div>
